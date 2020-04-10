@@ -36,10 +36,14 @@ Edit this document to include your answers after each question. Make sure to lea
 Semantic HTML is HTML that introduces meaning to the web page.
 
 2. What are the 4 areas of the box model?
-content edge 
-padding edge
-border edge
-margin edge
+
+content edge ;
+
+padding edge;
+
+border edge;
+
+margin edge;
 
 3. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
