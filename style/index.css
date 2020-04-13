@@ -66,6 +66,22 @@ p {
     line-height: 1.4;
 }
 
+/* Working on the header and navigation here! */
+
+
+header nav{
+    width:100%;
+display:flex;
+justify-content: space-between;
+
+}
+
+nav a{
+    text-decoration: none;
+}
+
+/* End of header and navigation work! */
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -112,6 +128,44 @@ p {
     justify-content: center;
 }
 
+
+/* working on changing the colors of each box here */
+
+.middle-content .boxes .box:first-child{
+    background-color:teal;
+}
+.middle-content .boxes .box:nth-child(2){
+    background-color:gold;
+}
+.middle-content .boxes .box:nth-child(3){
+    background-color:cadetblue;
+}
+.middle-content .boxes .box:nth-child(4){
+    background-color:coral;
+}
+.middle-content .boxes .box:nth-child(5){
+    background-color:crimson;
+}
+.middle-content .boxes .box:nth-child(6){
+    background-color:forestgreen;
+}
+.middle-content .boxes .box:nth-child(7){
+    background-color:darkorchid;
+}
+.middle-content .boxes .box:nth-child(8){
+    background-color:hotpink;
+}
+.middle-content .boxes .box:nth-child(9){
+    background-color:indigo;
+}
+.middle-content .boxes .box:nth-child(10){
+    background-color:dodgerblue;
+}
+
+/* end of box colorization */
+
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -144,3 +198,108 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*Media quiries:
+ accessibility for tablet  */
+
+@media (max-width:800px){
+
+    .container{
+        width:100%;
+    }
+
+
+        #home nav{
+            font-size:1.6rem;
+            align-items: center;
+        }
+
+        
+      .logo{
+          padding:4% 0;
+      }  
+
+
+    .cover-img img{
+        display:flex;
+        justify-content: :center;
+        width:100%;
+        padding:4% 0;
+    }
+
+    .top-content{
+        font-size: 1.2rem;
+    }
+
+  .top-content h2{
+      font-size: 1.6rem; 
+  }
+
+
+  .bottom-content{
+    font-size:1.2rem;
+  
+}
+
+.bottom-content h2{
+    font-size:1.6rem;
+}
+
+}
+
+/* end of tablet accessibility */
+
+/* accessibility for phone */
+
+@media (max-width:500px){
+    
+#home nav{
+    flex-direction:column;  
+}
+
+#home nav a{
+    border:1px grey solid;
+    border-radius: 2rem;
+    background-color: silver;
+    padding:.5% 1rem;
+    border-bottom-width: .3rem;
+    border-left-width: .1rem;
+    width:30%;
+    text-align:center;
+}  
+
+#home nav a:nth-child(4){
+    display:none;
+}
+
+
+
+.top-content{
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-content .text-container {
+    width: 100%;
+    padding: 4% 4%;
+    line-height:1vh;
+}
+
+.middle-content h2{
+font-size:1.6rem;
+text-align: center;
+}
+
+.middle-content .boxes{
+    flex-direction:column;
+    align-content: center;
+}
+
+
+.bottom-content {
+    display:none;
+}
+
+
+
+/* end of phone accessibility */
